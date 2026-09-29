@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahamtulla - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #E9EDC9;
+            color: #283618;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        nav{
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #faedcd;
+
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+
+             nav ul li a {
+                text-decoration: none;
+                color: white;
+             }
+
+            nav ul li a:hover {
+                color: #4d3c2f;
+                font-size: 1.40rem;
+            }
+
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .firstSection div{
+            width: 30%;
+        }
+        .leftSection{
+            background-color: #d4a373;
+            box-sizing: border-box;
+            padding: 35px;
+            border-radius: 15px;
+            width: 45%;
+            
+
+        }
+        .rightSection{
+            width: 380px;
+            height: 480px;
+            border: 2px solid #70f5d2;
+            border-radius: 25px;
+            background-color: #101212;
+            padding: 15px;
+            box-shadow: 0 0 30px rgba(112, 245, 210, 0.15);
+            position: relative;
+
+        }
+        .rightSection img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 15px;
+            
+        }
+        .card{
+            position: absolute;
+            bottom: 100px;
+            left: 25px;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+           
+            border: 1px solid #555;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        #element{
+            color: lavender;
+        }
+        .secondSec{
+            max-width: 80vw
+            margin: auto;
+        }
+
+        hr{
+            color: #bcd4e6;
+        }
+        html {
+               scroll-behavior: smooth;
+        }
+        footer {
+            background-color: #bcd4e6;
+            height: 233px;
+        }
+        .footer {
+            display: flex;
+            margin: 23px 122px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .second {
+            display: flex;
+            justify-content: center;
+        }
+        footer ul li {
+            list-style-type: none;
+            margin: 0 23px;
+        }
+        footer .text-center {
+            text-align: center;
+        }
+
+    </style>
+    <style>
+    .site-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .site-section h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .site-section p {
+            line-height: 1.7;
+            max-width: 65ch;
+        }
+        .site-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+        .site-item {
+            background-color: #faedcd;
+            border: 1px solid #d4a373;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .site-item h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .site-item p {
+            font-size: 0.95rem;
+        }
+        .site-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            margin-top: 20px;
+        }
+        .site-skills li {
+            border: 1px solid #283618;
+            border-radius: 4px;
+            padding: 6px 14px;
+            font-weight: 500;
+        }
+        .site-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 22px;
+            background-color: #283618;
+            color: #E9EDC9;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 6px;
+        }
+        .site-button:hover,
+        .site-button:focus-visible {
+            background-color: #4d3c2f;
+        }
+        .site-section a:focus-visible,
+        .legal-links a:focus-visible {
+            outline: 3px solid #283618;
+            outline-offset: 3px;
+        }
+        .legal-links {
+            background-color: #bcd4e6;
+            text-align: center;
+            padding: 0 24px 24px;
+        }
+        .legal-links a {
+            color: #283618;
+            margin: 0 12px;
+        }
+        @media (max-width: 700px) {
+            .site-section { padding: 32px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Rahamtulla's Portfolio</div>
+            <div class="righr">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+
+            <main>
+                <section class="firstSection">
+                    <div class="leftSection">
+                        <p class="smallText>"---CSE STUDENT & WEB DEVELOPER></p>
+                        <h1>Hi, i'm
+                        <br>
+                        Mohammad Rahamtulla
+                        <br>
+                        I build
+                        <span class="gradient">Scalable</span><br>
+                        web apps
+                         <span id="element"></span>
+                        <br>
+                        people love
+                        <br>
+                        to use
+                        </h1>
+
+                        <p class="description">
+                            CSE student passionate about software development, I craft globally resilient platforms that enhance user trust and performance metrics
+                        </p>
+
+                        <p><strong>📍 Bengaluru, Karnataka, India.</strong></p>
+                    </div>
+                    <div class="rightSection">
+                        <img src="WhatsApp Image 2026-08-13 at 10.54.11.png" alt="my photo">
+                        <div class="card">
+                            <h3>HTML CSS Java</h3>
+                            <h3>JavaScript</h3>
+                        </div>
+                    </div>
+                </section>
+                </main>
+                 <section class="site-section" id="about">
+                    <h2>About</h2>
+                    <p>
+                        I am a Computer Science Engineering student based in Bengaluru. I write front-end code in HTML, CSS and JavaScript, and I use Java for programming coursework and practice.
+                    </p>
+                    <ul class="site-skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </section>
+ 
+                
+                <section class="site-section" id="services">
+                    <h2>Services</h2>
+                    <div class="site-grid">
+                        <div class="site-item">
+                            <h3>Web development</h3>
+                            <p>Websites and front-end pages built with HTML, CSS and JavaScript.</p>
+                        </div>
+                        <div class="site-item">
+                            <h3>Web design</h3>
+                            <p>Page layouts, colour and typography planned before any code is written.</p>
+                        </div>
+                        <div class="site-item">
+                            <h3>Graphic design</h3>
+                            <p>Visual assets and layouts for websites and print.</p>
+                        </div>
+                    </div>
+                </section>
+ 
+                <section class="site-section" id="projects">
+                    <h2>Projects</h2>
+                    <div class="site-grid">
+                        <div class="site-item">
+                            <h3>This portfolio</h3>
+                            <p>A hand-coded site built with HTML, CSS and JavaScript. The typing effect in the intro uses the Typed.js library. This is my first Portfolio and in future i will make more projects and coming soon...</p>
+                        </div>
+
+                    </div>
+                </section>
+ 
+           
+                <section class="site-section" id="contact">
+                    <h2>Contact</h2>
+                    <p>
+                        For questions about my work or to discuss a project, send me an email. I am based in Bengaluru, Karnataka, India.
+                    </p>
+                    <!-- TODO: replace your-email@example.com with your real address -->
+                    <a class="site-button" href="mailto:your-email@example.com">Email me</a>
+                    <a class="site-button site-button-outline" href="https://github.com/mohammadrahamtulla17" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </section>
+                </main>
+ 
+
+
+                <footer>
+                    <div class="footer"></div>
+                    <div class="first">
+                        <h3>Rahamtulla's Developer Portfolio</h3>
+                    </div>
+                    <div class="second">
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Services</li>
+                            <li>Projects</li>
+                            <li>Contact Me</li>
+                            
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        www.Rahamtullaportfolio.com || All rights reserved
+                    </div>
+                    
+                </footer>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer, Web designer, Graphic Designer'],
+      typeSpeed: 50,
+    });
+  </script>
+
+
+
+
+</body>
+</html>
